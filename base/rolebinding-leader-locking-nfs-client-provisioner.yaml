@@ -11,4 +11,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: nfs-client-provisioner
-  namespace: nfs-system
+  namespace: nfs-client-provisioner
