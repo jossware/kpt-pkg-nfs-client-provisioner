@@ -14,10 +14,10 @@ openAPI:
     io.k8s.cli.setters.nfs-server:
       x-k8s-cli:
         setter:
-          name: nsf-server
+          name: nfs-server
           value: nfsserver
     io.k8s.cli.setters.nfs-path:
       x-k8s-cli:
         setter:
-          name: nsf-path
+          name: nfs-path
           value: /ifs/kubernetes
