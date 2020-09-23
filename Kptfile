@@ -6,6 +6,16 @@ packageMetadata:
   shortDescription: NFS Client Provisioner
 openAPI:
   definitions:
+    io.k8s.cli.setters.namespace:
+      x-k8s-cli:
+        setter:
+          name: namespace
+          value: ""
+    io.k8s.cli.setters.name-suffix:
+      x-k8s-cli:
+        setter:
+          name: name-suffix
+          value: ""
     io.k8s.cli.setters.replicas:
       x-k8s-cli:
         setter:

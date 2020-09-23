@@ -1,5 +1,7 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
+nameSuffix: "" # {"$kpt-set":"name-suffix"}
+namespace: "" # {"$kpt-set":"namespace"}
 resources:
 - base
 patches:
