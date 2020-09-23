@@ -9,6 +9,8 @@ spec:
       containers:
       - name: nfs-client-provisioner
         env:
+        - name: PROVISIONER_NAME
+          value: cluster.local/nfs-client-provisioner  # {"$kpt-set":"provisioner"}
         - name: NFS_SERVER
           value: nfsserver # {"$kpt-set":"nfs-server"}
         - name: NFS_PATH
