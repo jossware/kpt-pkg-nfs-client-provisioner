@@ -1,0 +1,13 @@
+source:
+  type: helm
+  config:
+    name: stable/nfs-client-provisioner
+    version: 1.2.9
+    namespace:
+      name: nfs-system
+      create: true
+    values:
+      nfs:
+        server: nfsserver
+      odeSelector:
+        beta.kubernetes.io/arch: amd64

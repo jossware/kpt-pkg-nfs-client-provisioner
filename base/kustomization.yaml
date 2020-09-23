@@ -1,0 +1,10 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+resources:
+- clusterrole-nfs-client-provisioner-runner.yaml
+- clusterrolebinding-run-nfs-client-provisioner.yaml
+- deployment-nfs-client-provisioner.yaml
+- role-leader-locking-nfs-client-provisioner.yaml
+- rolebinding-leader-locking-nfs-client-provisioner.yaml
+- serviceaccount-nfs-client-provisioner.yaml
+- storageclass-nfs-client.yaml
