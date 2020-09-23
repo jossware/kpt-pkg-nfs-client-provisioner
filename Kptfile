@@ -31,3 +31,16 @@ openAPI:
         setter:
           name: nfs-path
           value: /ifs/kubernetes
+    io.k8s.cli.setters.provisioner-name:
+      x-k8s-cli:
+        setter:
+          name: provisioner-name
+          value: nfs-client-provisioner
+    io.k8s.cli.substitutions.provisioner:
+      x-k8s-cli:
+        substitution:
+          name: provisioner
+          pattern: cluster.local/${PROVISIONER_NAME}-provisioner
+          values:
+          - marker: ${PROVISIONER_NAME}
+            ref: '#/definitions/io.k8s.cli.setters.provisioner-name'

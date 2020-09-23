@@ -6,5 +6,6 @@ resources:
 - base
 patches:
 - path: patches/deployment-nfs-client-provisioner.yaml
+- path: patches/storageclass-nfs-client.yaml
 commonLabels:
   app.kubernetes.io/managed-by: kustomize
