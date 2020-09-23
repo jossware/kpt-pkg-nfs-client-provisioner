@@ -31,6 +31,8 @@ spec:
         volumeMounts:
         - mountPath: /persistentvolumes
           name: nfs-client-root
+      nodeSelector:
+        beta.kubernetes.io/arch: amd64
       serviceAccountName: nfs-client-provisioner
       volumes:
       - name: nfs-client-root

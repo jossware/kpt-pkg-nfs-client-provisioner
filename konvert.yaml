@@ -6,5 +6,5 @@ source:
     values:
       nfs:
         server: nfsserver
-      odeSelector:
+      nodeSelector:
         beta.kubernetes.io/arch: amd64
