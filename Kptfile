@@ -1,0 +1,23 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: kpt-pkg-nfs-client-provisioner
+packageMetadata:
+  shortDescription: NFS Client Provisioner
+openAPI:
+  definitions:
+    io.k8s.cli.setters.replicas:
+      x-k8s-cli:
+        setter:
+          name: replicas
+          value: "1"
+    io.k8s.cli.setters.nfs-server:
+      x-k8s-cli:
+        setter:
+          name: nsf-server
+          value: nfsserver
+    io.k8s.cli.setters.nfs-path:
+      x-k8s-cli:
+        setter:
+          name: nsf-path
+          value: /ifs/kubernetes
